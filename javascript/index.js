@@ -4,7 +4,7 @@ const handlCategory = async () => {
     const data = await response.json();
 
     const tabContainer = document.getElementById('tab-container');
-    data.data.news_category.slice(0, 3).forEach((category) => {
+    data.data.news_category.forEach((category) => {
         const div = document.createElement('div');
 
         div.innerHTML =
